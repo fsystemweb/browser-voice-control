@@ -1,5 +1,9 @@
 # 🎙 Browser Voice Control — Agent Skill
 
+<p align="center">
+  <img src="skill-speech.jpg" width="50%">
+</p>
+
 > Give any AI coding agent a voice. This skill teaches your agent how to build fully hands-free, voice-driven browser interfaces using the **native Web Speech API** — zero dependencies, zero API keys, entirely client-side.
 
 This is an [Agent Skills](https://agentskills.io) package compatible with Claude Code, Gemini CLI, Google Antigravity, Cursor, and any other tool that follows the open `SKILL.md` standard.
