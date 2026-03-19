@@ -254,6 +254,12 @@ The Web Speech API routes audio through the browser's built-in voice recognition
 
 ---
 
+## References
+
+- [Web Speech API Specification](https://webaudio.github.io/web-speech-api/)
+
+---
+
 ## Contributing
 
 PRs welcome. If you add new command patterns, extend the locale list, or improve Safari compatibility, please update `SKILL.md` and the relevant reference file in `references/`.

@@ -15,7 +15,9 @@ const recognition = new SR();
 | `interimResults`   | boolean  | `false`   | Fire events for in-progress (non-final) results   |
 | `lang`             | string   | `""`      | BCP 47 language tag (e.g. `"en-US"`, `"es-ES"`)   |
 | `maxAlternatives`  | number   | `1`       | Number of hypotheses per result                   |
-| `grammars`         | SpeechGrammarList | — | JSpeech Grammar Format (JSGF) constraint set  |
+| `phrases` (New)    | string[] | `[]`      | Contextual biasing (replaces `grammars`)          |
+| `processLocally` (New)| boolean | `false`  | Request on-device recognition                     |
+| `grammars`         | —        | —         | **Deprecated**. Use `phrases` instead.            |
 
 ## Methods
 
@@ -24,6 +26,7 @@ const recognition = new SR();
 | `.start()`     | Begin recognition (must be called from user gesture) |
 | `.stop()`      | End recognition gracefully; fires `result` first |
 | `.abort()`     | End recognition immediately; discards results    |
+| `static available(options)` | Returns `Promise<AvailabilityStatus>` (available, downloadable, unavailable) |
 
 ## Events
 
