@@ -212,7 +212,7 @@ Every voice control artifact follows this structure:
 ## Key Configuration Options
 
 ```js
-recognition.continuous     = true;    // false = single-shot (stops after first result)
+recognition.continuous     = true;    // false for single-shot use cases e.g. search bars, form fill
 recognition.interimResults = true;    // false = only fire on final results (saves CPU)
 recognition.lang           = 'en-US'; // BCP 47 tag — change for other locales
 recognition.maxAlternatives = 3;      // expose top-N hypotheses via event.results[i][j]
