@@ -105,7 +105,7 @@ Set `recognition.lang` to any BCP 47 code. Leaving it empty (`""`) defaults to t
 | `sv-SE` | Swedish |
 | `tr-TR` | Turkish |
 
-See [`references/locales.md`](references/locales.md) for the full list.
+See [`references/locales.md`](browser-voice-control/references/locales.md) for the full list.
 
 ---
 
@@ -129,7 +129,7 @@ Skills live in `~/.claude/skills/` (global, all projects) or `.claude/skills/` (
 
 **Option A — clone directly into your skills folder:**
 ```bash
-git clone https://github.com/fsystemweb/browser-voice-control \
+git clone https://github.com/YOUR_USERNAME/browser-voice-control \
   ~/.claude/skills/browser-voice-control
 ```
 
@@ -141,7 +141,7 @@ cp -r /path/to/browser-voice-control/. ~/.claude/skills/browser-voice-control/
 
 **Option C — use the Vercel skills CLI:**
 ```bash
-npx agent-skills-cli add fsystemweb/browser-voice-control
+npx agent-skills-cli add YOUR_USERNAME/browser-voice-control
 ```
 
 After installation, Claude Code discovers the skill automatically. You can also invoke it directly:
